@@ -1,0 +1,66 @@
+#D1 {
+	background: url("images/body1.jpg"), url("images/body2.jpg");
+	background-repeat: no-repeat, repeat-y;
+}
+
+#D2 {
+	margin-top: 300px;
+}
+
+#t1 {
+	margin-top: 260px;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-family: Courier;
+}
+
+#t2 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-family: Courier;
+}
+
+#t3 {
+	color: white;
+	font-size: 50px;
+	font-family: Courier;
+}
+	
+#coming {
+	color: gray;
+	text-align: center;
+}
+
+#box {
+	background-color: white;
+	margin-top: 50px;
+	margin-left: 540px;
+	margin-right: 540px;
+	padding: 2px;
+}
+#subwords {
+	float: left;
+}
+	
+#subscribe {
+	float: left;
+	background-color: white;
+	margin-left: 100px;
+	height: 310px;
+	width: 500px;
+}
+
+#questionnaire {
+	margin-left: 450px;
+}
+
+#box2 {
+	background-color: black;
+	margin-top: 50px;
+	margin-left: 450px;
+	margin-right: 400px;
+	padding: 2px;
+}
+	

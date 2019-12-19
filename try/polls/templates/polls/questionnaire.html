@@ -1,0 +1,26 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<body>
+	<div id='box2'>
+		<h1 id='t2'> Travellist </h1>
+	</div>
+	<div id='questionnaire'>
+		<form type='post' action="{% url 'polls:vote' %}">
+		{% if data %}
+			{% for question in data %}
+				<p>{{question.question_text}}</p>
+					
+					{% csrf_token %}
+					{% for choice in question.choice_set.all %}
+						<input type='radio' name='{{question.question_text}}' id='choice{{ forloop.counter }}' value='{{ choice.id }}'>
+						<label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+					{% endfor %}
+			{% endfor %}
+		<input type='submit' value='Vote'>
+		</form>
+		{% else %}
+			<p> Too late; no more treats </p>
+		{% endif %}
+	</div>
+</body> 
